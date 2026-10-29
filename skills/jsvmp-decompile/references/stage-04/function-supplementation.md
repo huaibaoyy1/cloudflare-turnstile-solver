@@ -1,5 +1,5 @@
-# Stage 4 function supplementation
+# Function supplementation
 
 Build a function inventory: valid entity, entered, partial product, not entered, unknown, or rejected. Follow original wrappers and captures. Suppress only artificial driving points; preserve legitimate initialization and host boundaries.
 
-For every supplemented function record target, legal driver, body recovery, captured values, commit location, new discoveries, coverage, progress, and stop reason. Empty lists do not prove all hidden functions were found. Recovery failure, no progress, unknown host behavior, or budget exhaustion is a hard stop.
+For every target record target, legal driver, body, captures, commit location, new discoveries, coverage increment, progress, and stop reason. An exhausted list does not prove complete discovery.
