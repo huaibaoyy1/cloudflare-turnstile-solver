@@ -1,33 +1,29 @@
-# Stage 1 report
+# Stage 1 report template
 
 ## Scope and baseline
 - Repository/commit:
-- Input sample/bytecode:
-- Original interpreter/runtime:
-- Candidate artifact:
+- Sample/bytecode/runtime:
 - Parser/tool versions:
 
-## Decision path
-- D0-D8 decisions:
-- Rejected interpretations:
+## D0-D8 decisions
+- Decision:
+- Search paths/symbols:
+- Evidence:
+- Rejected interpretation:
+- Stop or next action:
 
-## Protocol and data flow
-- Root entry/legal prefix:
-- State slots/lifetime:
-- Scope and captures:
+## Protocol model
+- Root and legal prefix:
+- State/scope/captures:
 - Host bindings:
-- Function creation/calls:
+- Functions/calls:
 - Completion/error/cleanup:
-
-## Evidence and limitations
-- Exact paths/symbols:
-- Commands/fixtures:
-- Unknown or stop condition:
+- Management/business checkpoints:
 
 ## Status matrix
 - Static:
-- Built artifact:
+- Build/artifact:
 - Runtime:
 - Business/observable:
 
-## Next gate
+## Risks, missing evidence, and next gate
