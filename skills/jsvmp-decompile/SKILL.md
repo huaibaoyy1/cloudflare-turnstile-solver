@@ -38,6 +38,10 @@ Before switching, write a compatibility note covering node-kind mapping, visitor
 - **Stage 4:** supplement unvisited functions and bodies through original wrappers/captures. Read `references/stage-04/`.
 - **Stage 5:** compare baseline and final artifacts, perform independent static review, controlled execution, observable/business difference checks, regression, and artifact handoff. Read `references/stage-05/`.
 
+## Output artifacts
+
+When the request asks for decompiled code, follow `references/full-reconstruction.md` first, then `references/output-contract.md`, implement the Babel pipeline in `references/babel-pipeline.md`, and use `references/artifact-and-reporting.md` for the handoff. The expected result is complete source for the declared scope plus call graph, state model, coverage, provenance, and limitations, not only a report or a few snippets.
+
 ## Required report fields
 
 Every stage report must include: scope/baseline, decision path, exact files and symbols, inputs/outputs, protocol or state model, changes, evidence, limitations, four-state status matrix, unresolved risks, and the next gate. Use the templates and checklists in the references, but write project-specific reports under `reports/stage-01.md` through `reports/stage-05.md`.
