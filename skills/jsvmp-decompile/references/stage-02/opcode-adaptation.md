@@ -1,7 +1,7 @@
 # Stage 2 opcode adaptation
 
-Process opcode and metadata extraction in bounded batches. For each batch record the original producer/flow/helper/receiver chain, AST shape, output parameter or container, naming allocation, one-time evaluation requirements, old values, target/receiver semantics, and completion/throw behavior.
+Process opcode and metadata extraction in bounded batches. For each batch record the producer/flow/helper/receiver chain, AST shape, output parameter/container, naming allocation, one-time evaluation, old values, target/receiver semantics, and completion/throw behavior.
 
-Audit the interaction among number/string/sequence/proxy/control-flow transformers and `OpcodeParser`, `FindOffset`, `FindFunctions`, `PayloadKeyExtractor`, and `ScriptVisitor`. Preserve the original wrapper/capture environment and register virtual functions at creation time.
+Audit interactions among number, string, sequence, proxy, and control-flow transforms and the opcode/function/offset/payload visitors. Preserve wrapper/capture scope and register virtual functions at creation time.
 
-Accept only source-level static evidence for this stage. State exactly what was not executed and do not claim that recovered opcodes produce valid requests.
+Static acceptance covers source shape, types, references, generated syntax, and deterministic output for fixtures. It does not prove recovered opcodes or request construction are valid at runtime.
